@@ -7,6 +7,25 @@ public class MessageTests
 {
     
     [Fact]
+    public void TestSampleInput()
+    {
+        string input1 = "33#";
+        string expected1 = "E";
+        string result1 = Message.OldPhonePad(input1);
+        Assert.Equal(expected1, result1);
+
+        string input2 = "227*#";
+        string expected2 = "B";
+        string result2 = Message.OldPhonePad(input2);
+        Assert.Equal(expected2, result2);
+
+        string input3 = "4433555 555666#";
+        string expected3 = "HELLO";
+        string result3 = Message.OldPhonePad(input3);
+        Assert.Equal(expected3, result3);
+    }
+    
+    [Fact]
     public void TestEmptyInput()
     {
         string input = "";

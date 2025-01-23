@@ -89,8 +89,17 @@ public class Message
 
     public static void Main(string[] args)
     {
+        // Sample 
+        Console.WriteLine(OldPhonePad("33#"));
+        Console.WriteLine(OldPhonePad("227*#"));
+        Console.WriteLine(OldPhonePad("4433555 555666#"));
+
+        // Task
+        Console.WriteLine(OldPhonePad("8 88777444666*664#"));
+
+        // Extra sample
         Console.WriteLine(OldPhonePad("222 2 22#"));
         Console.WriteLine(OldPhonePad("222 2 221222 2777#"));
-        Console.WriteLine(OldPhonePad("8 88777444666*664#"));
+        
     }
 }
