@@ -76,11 +76,7 @@ public class Message
         {
             output += GetValue(previousDigit, pressCount);
         }
-
-
         return output;
-
-
     }
 
     private static char GetValue(char number, int count) {
